@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangman Game 🎯</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🌈 Hangman Challenge</h1>
+    <p>Guess the word before the man is hung!</p>
+
+    <canvas id="hangmanCanvas" width="220" height="260"></canvas>
+
+    <div id="word" class="word"></div>
+
+    <div id="hint" class="hint"></div>
+
+    <div id="keyboard" class="keyboard"></div>
+
+    <div id="score-timer">
+      <span id="score">🏆 Score: 0</span>
+      <span id="timer">⏰ Time: 30s</span>
+    </div>
+
+    <div id="popup-container" class="popup-container">
+      <div class="popup">
+        <h2 id="final-message"></h2>
+        <button id="play-button">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="correctSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_85cc406cf7.mp3" preload="auto"></audio>
+  <audio id="wrongSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_70b3bb3cc2.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
